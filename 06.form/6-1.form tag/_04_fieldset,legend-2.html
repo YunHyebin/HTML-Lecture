@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset, legend 실습</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 20px;
+        }
+        li lable{
+            width: 80px;
+            float: left;
+        }
+        fieldset{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <lable for="name">이름</lable>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <lable for="addr">메일 주소</lable>
+                    <input type="text" id="addr">
+                </li>
+            </ul> 
+        </fieldset>       
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li>
+                    <lable for="id">아이디</lable>
+                    <input type="text" id="id">
+                </li>
+                <li>
+                    <lable for="pwd">비밀번호</lable>
+                    <input type="text" id="pwd">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

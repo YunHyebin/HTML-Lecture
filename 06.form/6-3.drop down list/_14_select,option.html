@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운 목록을 만들어주는 select, option</title>
+</head>
+<body>
+    <form action="">
+        <h3>자신있는 언어</h3>
+        <!--select 옵션-->
+        <!--size: 드롭다운 목록 표출개수-->
+        <!--multiple: ctrl + 여러개의 항목 선택 가능 옵션-->
+        <select name="language" id="programLanguage" size="3" multiple="2">
+            <!--option 옵션-->
+            <!--value: 옵션 선택했을 때 서버로 전송될 값 지정-->
+            <!--select 페이지 로딩 시 기본으로 선택되어 있는 항목 지정-->
+            <option value="java">자바</option>
+            <option value="c">C언어</option>
+            <option value="c++">C++</option>
+            <option value="mysql">MySQL</option>
+            <option value="oracle" selected>오라클</option>
+            <option value="javascript">자바스크립트</option>
+            <option value="python">파이썬</option>
+        </select>
+    </form>
+</body>
+</html>

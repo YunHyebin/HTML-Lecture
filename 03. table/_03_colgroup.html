@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colgroup 태그 연습</title>
+    <style>
+        table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        th {
+			padding:100px;   
+		}
+		tr > td:nth-child(odd) { 
+			width:100px; 
+            height:100px; 
+		}
+		tr > td:nth-child(even) { 
+			width:100px;  
+            height:100px; 
+		}
+    </style>
+</head>
+<body>
+    <table>
+        <caption>colgroup 연습</caption>
+    <colgroup>
+        <col>
+        <col span="2" style="background-color:aqua;">
+        <col span="1" style="background-color: yellow;">
+    </colgroup>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </table>
+</body>
+</html>

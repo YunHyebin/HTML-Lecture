@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품주문서</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        legend{
+            color: blueviolet;
+
+        }
+        li{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend><b>개인정보</b></legend>
+                <ul>
+                    <li>
+                        <lable for="p-name"><b>이름</b></lable>
+                        <input type="text" id="p-name" placeholder="여백없이 입력" required>
+                    </li>
+                    <li>
+                        <lable for="p-phone"><b>연락처</b></lable>
+                        <input type="text" id="p-phone" placeholder="연락가능한 번호" required>
+                    </li>
+                </ul>
+        </fieldset>
+        <fieldset>
+            <legend><b>배송지 정보</b></legend>
+            <ul>
+                <li>
+                    <label for="d-addr">주소</label>
+                    <input type="text" id="d-addr">
+                </li>
+                <li>
+                    <label for="">전화번호</label>
+                    <input type="tel" id="d-phone">
+                </li>
+                <li>
+                    <label for="content">메모</label>
+                    <textarea id="content" style="size:none" cols="30" rows="5"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend><b>주문 정보</b></legend>
+            <ul>
+                <li>
+                    <label>
+                    <input type="checkbox" name="product" value="antigua">과테마라 안티구아(100g)
+                    <input type="number" min="0" max="100" step="1">개
+                    </label>
+                </li>
+                <li>
+                    <label>
+                    <input type="checkbox" name="product" value="mandeling">인도네시아 만델링(100g)
+                    <input type="number" min="0" max="100" step="1">개
+                    </label>
+                </li>
+                <li>
+                    <label>
+                    <input type="checkbox" name="product" value="blending">탐라는도다(블렌딩)(100g)
+                    <input type="number" min="0" max="100" step="1">개
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <button>주문하기</button>
+        <button type="reset">다시 작성</button>
+    </form>
+</body>
+</html>

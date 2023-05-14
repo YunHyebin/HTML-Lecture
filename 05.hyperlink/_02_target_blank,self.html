@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크내용을 띄워줄 위치를 지정하는 target 속성</title>
+    <style>
+        div{
+            height: 100px;
+            width: 500px;
+            border: 1px solid black;
+            background-color: beige;
+            padding: 100px;
+            margin: 50px;
+
+        }
+
+        .a1{
+            text-decoration: none;
+            color:lightseagreen;
+        }
+        .a2{
+            text-decoration: none;
+            color:lightcoral
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>새 탭에서 링크 열기</h2>
+        <p>target=<b>"_blank"</b>이면 새 탭에서 링크를 연다</p>
+        <a class="a1" href="http://www.naver.com" target="_blank">네이버</a>
+    </div>
+    <div>
+        <h2>현재 탭에서 링크 열기</h2>
+        <p>target=<b>"_self"</b>이면 현재 탭에서 링크를 연다</p>
+        <a class="a2" href="http://www.google.com" terget="_self">구글</a>
+    </div>
+</body>
+</html>

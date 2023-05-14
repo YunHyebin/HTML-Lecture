@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 소스코드 표시</title>
+</head>
+<body>
+    <h1> 자바로 작성한 코드 </h1>
+    <code> <pre>
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
+		ArrayList<int []> allCondo = new ArrayList<int []>();
+		
+		bw.write("후보 콘도 개수: ");
+		bw.flush();
+		int cnt = Integer.parseInt(br.readLine());
+		
+		for(int i=0; i<cnt; i++) {
+			bw.write((i+1 + "번 후보 콘도\n콘도 거리 & 가격: "));
+			bw.flush();
+			String[] input = br.readLine().split(" ");
+			int d = Integer.parseInt(input[0]);
+			int m = Integer.parseInt(input[1]);
+			allCondo.add(new int[] {d, m});
+		}
+		
+		Collections.sort(allCondo, (a, b) -> a[0] - b[0]);
+    </pre></code>
+    <hr>
+    <h1> 파이썬으로 작성한 코드 </h1>
+    <pre>
+        allCondo = []
+        cnt = int(input("후보 콘도 갯수: "))
+
+        for i in range(0, cnt):
+            print(f"{i + 1}번 후보 콘도")
+            d, m = input("콘도 거리 & 가격: ").split(" ")
+            allCondo.append([int(d), int(m)])
+    
+        allCondo.sort()
+    </pre>
+</body>
+</html>

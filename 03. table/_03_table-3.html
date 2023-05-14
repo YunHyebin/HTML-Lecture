@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 제목 붙이기</title>
+    <style>
+        table, th, td{
+            border:1px solid #ccc;
+            border-collapse: collapse;
+        }
+        /*
+        th {
+			padding:15px;   
+		}
+		tr > td:nth-child(odd) { 
+			width:120px;  
+		}
+		tr > td:nth-child(even) { 
+			width:300px;  
+		}
+        */
+    </style>
+</head>
+<body>
+    <h2>caption표 제목</h2>
+    <table>
+        <caption>
+            <b> popular sites </b>
+            <p> 가장 많이 사용되는 사이트 </p>
+        </caption>
+        <tr>
+            <th>이름</th>
+            <th>사이트</th>
+        </tr>
+        <tr>
+            <th>google</th>
+            <td>www.google.com</td>
+        </tr>
+        <tr>
+            <th>naver</th>
+            <td>www.naver.com</td>
+        </tr>
+        <tr>
+            <th>youtube</th>
+            <td>www.youtube.com</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼의 구역을 나누는 fieldset, legend 태그</title>
+    <style>
+        fieldset{
+            margin:14px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 20px;
+        }
+        li label{
+            width: 130px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>주문자 정보</legend>
+            <ul>
+                <li>
+                    <label for="sendname">이름</label>
+                    <input type="text" id="sendname">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+                <ul>
+                    <li>
+                        <label for="takename">받는 사람 이름</label>
+                        <input type="text" id="takename">
+                    </li>
+                    <li>
+                        <label for="addr">주소</label>
+                        <input type="text" id="addr">
+                    </li>
+                </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

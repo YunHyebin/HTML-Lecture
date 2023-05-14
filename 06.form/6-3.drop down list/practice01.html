@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롬다운 목록 연습1</title>
+    <style>
+        .reg {
+            font-size: 14px;
+            width: 110px;
+            color: #390;
+            font-weight: bold;
+            float: left;
+            margin-right: 10px;
+        }
+
+        ul li {
+            list-style-type: none;
+            margin: 15px 0;
+        }
+
+        label {
+            color: green;
+        }
+
+        form legend {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1>여름방학 특강 신청</h1>
+        <fieldset>
+            <legend>수강 신청</legend>
+            <ul>
+                <li>
+                    <label for="number">학번</label>
+                    <input type="text" id="number">
+                </li>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label class="reg" for="major">학과</label>
+                    <select id="major" size="5">
+                        <optgroup label="공과대학">
+                            <option value="archi">건축공학과</option>
+                            <option value="mechanic">기계공학과</option>
+                            <option value="software" selected>소프트웨어학과</option>
+                            <option value="industSecure">산업보안학과</option>
+                            <option value="informSecure">정보보안학과</option>
+                        </optgroup>[]
+                        <optgroup label="교육학과">
+                            <option value="childhoodEDU">유아교육학과</option>
+                            <option value="specialEDU">특수교육학과</option>
+                        </optgroup>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+
+</html>

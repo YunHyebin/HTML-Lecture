@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 연습</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 20px;
+        }
+        li label{
+            width: 50px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h3>예약 정보</h3>
+    <form action="">
+        <ul>
+            <li>
+                <label for="r-name">이름</label>
+                <input type="text" id="r-name">
+            </li>
+            <li>
+                <label for="r-phone">휴대폰</label>
+                <input type="tel" id="r-phone">
+            </li>
+            <li>
+                <label for="r-email">이메일</label>
+                <input type="email" id="r-email">
+            </li>
+            <li>
+                <input type="button" value="예약하기" onclick="alert('예약되었습니다.')">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
